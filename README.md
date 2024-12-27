@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,10 +28,11 @@
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
+            transition: background-color 0.3s;
         }
         nav a:hover {
-            background-color: #ddd;
-            color: black;
+            background-color: #575757;
+            color: #fff;
         }
         main {
             padding: 2em;
@@ -61,9 +61,15 @@
             margin: 4px 2px;
             cursor: pointer;
             border-radius: 12px;
+            transition: background-color 0.3s;
         }
         .button:hover {
             background-color: #315f7d;
+        }
+        .highlight {
+            background-color: #ffeb3b;
+            padding: 5px;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -89,18 +95,25 @@
                 <li>Beach getaway</li>
                 <li>City exploration</li>
             </ul>
-            <button class="button" onclick="alert('More adventures coming soon!')">See More Adventures</button>
+            <button class="button" onclick="showMoreAdventures()">See More Adventures</button>
+            <div id="more-adventures" style="display:none;">
+                <ul>
+                    <li>Desert safari</li>
+                    <li>Forest camping</li>
+                    <li>Snowy mountains</li>
+                </ul>
+            </div>
         </section>
         <section id="contact">
             <h2>Contact</h2>
             <p>If you want to know more about Dory or share your own car adventures, feel free to reach out!</p>
-            <form>
+            <form onsubmit="submitForm(event)">
                 <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br>
+                <input type="text" id="name" name="name" required><br>
                 <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br>
+                <input type="email" id="email" name="email" required><br>
                 <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
                 <input type="submit" value="Submit" class="button">
             </form>
         </section>
@@ -108,5 +121,20 @@
     <footer>
         <p>&copy; 2024 Dory's Adventures</p>
     </footer>
+    <script>
+        function showMoreAdventures() {
+            var moreAdventures = document.getElementById('more-adventures');
+            if (moreAdventures.style.display === 'none') {
+                moreAdventures.style.display = 'block';
+            } else {
+                moreAdventures.style.display = 'none';
+            }
+        }
+
+        function submitForm(event) {
+            event.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+        }
+    </script>
 </body>
 </html>
