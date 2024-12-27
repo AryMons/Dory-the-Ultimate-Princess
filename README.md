@@ -10,31 +10,31 @@
             font-family: 'Verdana', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #ffecd2, #fcb69f);
-            color: #333;
+            background: linear-gradient(to right, #001f54, #003366);
+            color: #e4e4e4;
         }
 
         /* Header Styles */
         header {
-            background: linear-gradient(to right, #4facfe, #00f2fe);
-            color: white;
+            background: linear-gradient(to right, #003366, #004080);
+            color: #ffffff;
             padding: 1.5em;
             text-align: center;
             font-size: 1.5em;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
 
         /* Navigation Bar Styles */
         nav {
-            background: #2a2a72;
+            background: #002244;
             overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
 
         nav a {
             float: left;
             display: block;
-            color: #fff;
+            color: #ffffff;
             text-align: center;
             padding: 14px 20px;
             text-decoration: none;
@@ -43,8 +43,8 @@
         }
 
         nav a:hover {
-            background-color: #ff8a00;
-            color: #fff;
+            background-color: #004080;
+            color: #e4e4e4;
             transform: scale(1.1);
         }
 
@@ -55,14 +55,15 @@
 
         section {
             margin-bottom: 2.5em;
-            background: #ffffffcc;
+            background: #003366;
             border-radius: 10px;
             padding: 1.5em;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
 
         section h2 {
-            color: #4facfe;
+            color: #66ccff;
             margin-bottom: 0.5em;
         }
 
@@ -73,9 +74,9 @@
 
         /* Button Styles */
         .button {
-            background-color: #00c6ff;
+            background-color: #66ccff;
             border: none;
-            color: white;
+            color: #002244;
             padding: 10px 25px;
             text-align: center;
             font-size: 16px;
@@ -86,27 +87,29 @@
         }
 
         .button:hover {
-            background-color: #0072ff;
+            background-color: #004080;
+            color: #ffffff;
             transform: scale(1.1);
         }
 
         /* Highlight Text Styles */
         .highlight {
-            background-color: #ffe57f;
+            background-color: #66ccff;
             padding: 5px;
             border-radius: 5px;
+            color: #002244;
         }
 
         /* Footer Styles */
         footer {
-            background: linear-gradient(to right, #4facfe, #00f2fe);
-            color: white;
+            background: linear-gradient(to right, #003366, #004080);
+            color: #ffffff;
             text-align: center;
             padding: 1em;
             position: fixed;
             width: 100%;
             bottom: 0;
-            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
         }
 
         /* Hidden Content */
@@ -129,26 +132,29 @@
             display: block;
             margin-top: 1em;
             font-weight: bold;
+            color: #e4e4e4;
         }
 
         form input, form textarea {
             width: 100%;
             padding: 10px;
             margin-top: 5px;
-            border: 1px solid #ccc;
+            border: 1px solid #66ccff;
             border-radius: 5px;
             font-size: 14px;
+            background: #002244;
+            color: #e4e4e4;
         }
 
         form input:focus, form textarea:focus {
             outline: none;
-            border-color: #00c6ff;
+            border-color: #66ccff;
         }
 
         form input[type="submit"] {
             width: auto;
-            background: #00c6ff;
-            color: white;
+            background: #66ccff;
+            color: #002244;
             border: none;
             padding: 10px 20px;
             cursor: pointer;
@@ -157,7 +163,8 @@
         }
 
         form input[type="submit"]:hover {
-            background: #0072ff;
+            background: #004080;
+            color: #ffffff;
         }
     </style>
 </head>
